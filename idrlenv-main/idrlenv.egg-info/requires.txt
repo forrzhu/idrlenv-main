@@ -1,0 +1,2 @@
+pygame
+numpy<2.0
