@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "idrlenv"
+version = "0.0.1"
+description = "idrlenv"
+readme = "README.md"
+authors = [
+    {name = "Intelligent Design & Robust Learning lab", email = "weipeng@deepinfar.cn"}
+]
+license = {text = "Apache Software License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords = ["AI", "control", "idrl", "gym"]
+requires-python = ">=3.9"
+
+dependencies = [
+    "pygame",
+    "numpy<2.0",
+]
+
+urls = { "Homepage" = "http://gitlab.idrl.ac.cn:88/ai4science/idrlenv" }
+
+[tool.setuptools.packages.find]
+where = ["."]
